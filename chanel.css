@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ***************************  */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+
+  background: linear-gradient(to right, #0752b5 50%, #061232 50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Viewport Height 100vh  = 100% de la resolution de mon écran*/
+
+  height: 100vh;
+}
+
+main {
+  width: 60%;
+  height: 75%;
+  background: white;
+  display: flex;
+}
+
+/* COTER GAUCHE  */
+
+.left {
+  width: 50%;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: 20px;
+}
+
+article {
+  width: 70%;
+  margin: 0 auto;
+}
+
+article h1 {
+  font-size: 3rem;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+
+  font-family: "Raleway", sans-serif;
+}
+
+article p {
+  font-size: 0.8rem;
+
+  font-family: "Raleway", sans-serif;
+}
+
+footer {
+  display: flex;
+  gap: 5%;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+footer a:hover {
+  text-decoration: underline 1.8px;
+}
+
+/* COTER DROIT  */
+
+.right {
+  width: 50%;
+}
+
+/* HAUT COTER DROIT  */
+
+.top {
+  height: 50%;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BAS COTER DROIT */
+
+.bottom {
+  height: 50%;
+
+  display: flex;
+}
+
+/* bas gauche */
+.bottom_left {
+  width: 50%;
+}
+
+.bottom_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* bas droit  */
+
+.bottom_right {
+  width: 50%;
+  background: #0752b5;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+
+  font-size: 1.2rem;
+  font-weight: 100;
+
+  gap: 10px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* transition de zoom */
+.bottom_right i {
+  transition: all 0.5s ease-out;
+}
+
+.bottom_right i:hover {
+  transform: scale(1.5);
+}
+
+/* fin de transition */
